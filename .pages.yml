@@ -1,0 +1,85 @@
+media:
+  input: assets
+  output: /assets
+content:
+  - name: workshops
+    label: Workshops
+    type: file
+    path: content/workshops.json
+    format: json
+    operations:
+      delete: false
+    fields:
+      - name: title
+        label: "Workshop title"
+        type: string
+      - name: tagline
+        label: "Workshop tagline"
+        type: text
+      - name: date_one
+        label: "First date"
+        type: string
+      - name: venue_one
+        label: "First venue"
+        type: string
+      - name: date_two
+        label: "Second date"
+        type: string
+      - name: venue_two
+        label: "Second venue"
+        type: string
+      - name: description
+        label: "Short workshop summary"
+        type: text
+      - name: registration_url
+        label: "Registration link (https://)"
+        type: string
+      - name: registration_label
+        label: "Registration button label"
+        type: string
+      - name: additional_note
+        label: "Additional note"
+        type: text
+  - name: services
+    label: Services
+    type: file
+    path: content/services.json
+    format: json
+    operations:
+      delete: false
+    fields:
+      - name: soul_blueprint_description
+        label: "Soul Blueprint summary"
+        type: text
+      - name: channeling_description
+        label: "Channeling summary"
+        type: text
+      - name: auric_description
+        label: "Auric and Soul Colors summary"
+        type: text
+      - name: home_land_description
+        label: "Home and Land summary"
+        type: text
+  - name: books
+    label: Art and Books
+    type: file
+    path: content/books.json
+    format: json
+    operations:
+      delete: false
+    fields:
+      - name: wise_adult_description
+        label: "Wise Adult Oracle Deck summary"
+        type: text
+      - name: kickstarter_launch
+        label: "Planned Kickstarter launch"
+        type: string
+      - name: heart_speaks_url
+        label: "The Heart Speaks shopping link"
+        type: string
+      - name: meet_your_soul_url
+        label: "Meet Your Soul shopping link"
+        type: string
+      - name: inner_child_purchase_email
+        label: "Inner Child deck direct-order email"
+        type: string
